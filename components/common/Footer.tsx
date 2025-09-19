@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <Link href="/products" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
+              <Link href="/Products" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
                 All Products
               </Link>
               <Link href="/categories" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
@@ -44,10 +44,10 @@ export const Footer: React.FC = () => {
               <Link href="/artisans" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
                 Featured Artisans
               </Link>
-              <Link href="/about" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
+              <Link href="/About" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
                 About Us
               </Link>
-              <Link href="/contact" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
+              <Link href="/Contact" className="block text-stone-300 hover:text-amber-400 transition-colors text-sm">
                 Contact
               </Link>
             </div>

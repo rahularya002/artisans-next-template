@@ -62,7 +62,7 @@ export default function HomePage() {
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="flex items-center justify-center">
-                  <Link href="/products" className="flex items-center">
+                  <Link href="/Products" className="flex items-center">
                     Shop Now <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -216,7 +216,7 @@ export default function HomePage() {
           {/* CTA */}
           <div className="text-center mt-12">
             <Button size="lg">
-              <Link href="/products" className="flex items-center justify-center">
+              <Link href="/Products" className="flex items-center justify-center">
                 View All Products <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

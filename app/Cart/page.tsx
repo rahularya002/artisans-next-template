@@ -34,7 +34,7 @@ export default function CartPage() {
               Discover unique handcrafted items from our talented artisans
             </p>
             <Button size="lg">
-              <Link href="/products">
+              <Link href="/Products">
                 Start Shopping
               </Link>
             </Button>
@@ -56,7 +56,7 @@ export default function CartPage() {
             </p>
           </div>
           <Link
-            href="/products"
+            href="/Products"
             className="flex items-center text-amber-700 hover:text-amber-800 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -121,7 +121,7 @@ export default function CartPage() {
               </div>
 
               <Button className="w-full mb-4">
-                <Link href="/checkout">
+                <Link href="/Checkout">
                   Proceed to Checkout
                 </Link>
               </Button>

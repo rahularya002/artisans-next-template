@@ -38,7 +38,7 @@ export default function ProductDetailPage() {
       <div className="min-h-screen bg-stone-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-2xl font-bold text-stone-800 mb-4">Product not found</h1>
-          <Link href="/products" className="text-amber-700 hover:text-amber-800">
+          <Link href="/Products" className="text-amber-700 hover:text-amber-800">
             ← Back to products
           </Link>
         </div>
@@ -60,7 +60,7 @@ export default function ProductDetailPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-sm text-stone-600 mb-8">
-          <Link href="/products" className="hover:text-amber-700">Products</Link>
+          <Link href="/Products" className="hover:text-amber-700">Products</Link>
           <span>›</span>
           <span className="text-stone-400">{product.category}</span>
           <span>›</span>

@@ -37,7 +37,7 @@ export default function CheckoutPage() {
       <div className="min-h-screen bg-stone-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-2xl font-bold text-stone-800 mb-4">Your cart is empty</h1>
-          <Link href="/products" className="text-amber-700 hover:text-amber-800">
+          <Link href="/Products" className="text-amber-700 hover:text-amber-800">
             ← Back to products
           </Link>
         </div>
@@ -163,7 +163,7 @@ export default function CheckoutPage() {
             </div>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Button >
-                <Link href="/products">Continue Shopping</Link>
+                <Link href="/Products">Continue Shopping</Link>
               </Button>
               <Button variant="outline">
                 Track Order

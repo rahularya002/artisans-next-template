@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Minus, Plus, Trash2 } from 'lucide-react';
 import { CartItem as CartItemType } from '../../types';
 import { useCart } from '../../context/CartContext';
@@ -24,7 +24,7 @@ export const CartItem: React.FC<CartItemProps> = ({ item }) => {
   return (
     <div className="flex items-center space-x-4 p-4 bg-white rounded-lg border border-stone-200 hover:shadow-md transition-shadow">
       {/* Product Image */}
-      <Link to={`/product/${product.id}`} className="flex-shrink-0">
+      <Link href={`/product/${product.id}`} className="flex-shrink-0">
         <img
           src={product.images[0]}
           alt={product.name}
@@ -35,7 +35,7 @@ export const CartItem: React.FC<CartItemProps> = ({ item }) => {
       {/* Product Info */}
       <div className="flex-1 min-w-0">
         <Link 
-          to={`/product/${product.id}`}
+          href={`/product/${product.id}`}
           className="font-medium text-stone-800 hover:text-amber-700 transition-colors"
         >
           <h3 className="truncate">{product.name}</h3>

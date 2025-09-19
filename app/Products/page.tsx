@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { SlidersHorizontal } from 'lucide-react';
 import { mockProducts } from '@/utils/mockData';
@@ -7,7 +7,7 @@ import { FilterOptions } from '@/types';
 import { ProductGrid } from '@/components/products/ProductGrid';
 import { ProductFilters } from '@/components/products/ProductFilters';
 
-export default function ProductsPage() {
+function ProductsPageInner() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -224,3 +224,11 @@ export default function ProductsPage() {
     </div>
   );
 };
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<div className="py-24 flex items-center justify-center">Loading...</div>}>
+      <ProductsPageInner />
+    </Suspense>
+  );
+}
